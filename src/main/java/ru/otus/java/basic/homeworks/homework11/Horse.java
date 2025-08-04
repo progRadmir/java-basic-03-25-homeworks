@@ -3,7 +3,7 @@ package ru.otus.java.basic.homeworks.homework11;
 public class Horse extends Animal{
 
     double speedSwim;
-    int swimMetreExpenses = 4;
+    static final int SWIM_METRE_EXPENSES = 4;
 
     public Horse(String name, double speedRun, int endurance, double speedSwim) {
         super(name, speedRun, endurance);
@@ -11,7 +11,7 @@ public class Horse extends Animal{
     }
 
     public double swim(int distance) {
-        endurance -= distance * swimMetreExpenses;
+        endurance -= distance * SWIM_METRE_EXPENSES;
         if (endurance < 0) {
             fresh = false;
             System.out.printf("У %s не хватило сил на такую дистанцию\n", name);
