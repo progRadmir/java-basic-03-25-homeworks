@@ -1,9 +1,9 @@
 package ru.otus.java.basic.homeworks.homework12;
 
 public class Cat {
-    String name;
-    int appetite;
-    boolean satiety;
+    private String name;
+    private int appetite;
+    private boolean satiety;
 
     public int getAppetite() {
         return appetite;
