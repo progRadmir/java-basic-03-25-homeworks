@@ -8,7 +8,7 @@ public class Test {
         Human human = new Human("Вася", 2, 50);
         Car car = new Car(0.1, 30);
         Horse horse = new Horse(5, 150);
-        Bicycle bicycle = new Bicycle(1, human);
+        Bicycle bicycle = new Bicycle(1);
         AllTerrainVehicle monster = new AllTerrainVehicle(0.4, 50);
 
         Scanner scanner = new Scanner(System.in);

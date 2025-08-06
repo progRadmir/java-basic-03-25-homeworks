@@ -17,7 +17,7 @@ public class Horse implements Transport{
         name = "Лошадь";
     }
 
-    public boolean move(int distance, Terrain terrain) {
+    public boolean move(int distance, Terrain terrain, Human human) {
         if (terrain == Terrain.SWAMP) {
             System.out.println("Лошадь не может перемещаться по болотам");
             return false;

@@ -17,7 +17,7 @@ public class Car implements Transport{
         return name;
     }
 
-    public boolean move(int distance, Terrain terrain) {
+    public boolean move(int distance, Terrain terrain, Human human) {
         if (terrain == Terrain.DENSE_FOREST || terrain == Terrain.SWAMP) {
             System.out.println("Машина не может перемещаться по лесам и болотам");
             return false;

@@ -61,7 +61,7 @@ public class Human {
             }
             return true;
         }
-        return currentTransport.move(distance, terrain);
+        return currentTransport.move(distance, terrain, this);
     }
 
 }

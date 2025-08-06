@@ -17,7 +17,7 @@ public class AllTerrainVehicle implements Transport{
         name = "Вездеход";
     }
 
-    public boolean move(int distance, Terrain terrain) {
+    public boolean move(int distance, Terrain terrain, Human human) {
         if (currentAmountFuel == 0) {
             System.out.println("Топливный бак пуст");
             return false;
