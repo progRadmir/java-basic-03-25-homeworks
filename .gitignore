@@ -3,3 +3,9 @@ target/
 *.iws
 *.iml
 *.ipr
+
+/src/main/java/ru/otus/java/basic/homeworks/homework19/**/*.txt
+
+
+
+
