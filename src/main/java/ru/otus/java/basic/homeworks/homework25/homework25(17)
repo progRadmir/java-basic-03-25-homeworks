@@ -1,0 +1,20 @@
+CREATE TABLE public.test (
+test_id integer NOT NULL,
+test_name text NOT NULL,
+CONSTRAINT test_pkey PRIMARY KEY(test_id)
+);
+
+CREATE TABLE public.question (
+question_id integer PRIMARY KEY,
+test_id integer NOT NULL,
+question_number integer NOT NULL,
+question_text text NOT NULL,
+CONSTRAINT question_fkey FOREIGN KEY (test_id) REFERENCES public.test (id)
+);
+
+CREATE TABLE public.answer (
+question_id integer NOT NULL,
+answer_text text NOT NULL,
+is_correct boolean NOT NULL,
+CONSTRAINT answer_fkey FOREIGN KEY (question_id) REFERENCES public.question (question_id)
+);
